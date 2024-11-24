@@ -1,27 +1,122 @@
-#container {
-  text-align: center;
+/* Historias */
+.story-list {
+  padding: 16px 0 8px;
+  border-bottom: 1px solid var(--ion-color-light);
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  .scroll-horizontal {
+    display: flex;
+    overflow-x: auto;
+    padding-left: 16px;
+  }
+
+  .scroll-item {
+    text-align: center;
+    margin-right: 16px;
+
+    .avatar-md {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid var(--ion-color-primary);
+    }
+
+    .item-label {
+      font-size: 13px;
+      margin-top: 8px;
+      color: var(--ion-text-color-medium);
+    }
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+/* Publicaciones */
+.post-item {
+  margin-bottom: 16px;
+  background-color: var(--ion-background-color);
+  border: 1px solid var(--ion-color-light);
+  border-radius: 8px;
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  .post-header {
+    padding: 8px;
 
-  color: #8c8c8c;
+    ion-row {
+      align-items: center;
 
-  margin: 0;
-}
+      .avatar-sm {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
 
-#container a {
-  text-decoration: none;
+      ion-icon {
+        font-size: 20px;
+        color: var(--ion-text-color-medium);
+      }
+    }
+  }
+
+  .post-media {
+    font-size: 0;
+
+    img,
+    video {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .post-actions {
+    padding: 8px 12px;
+
+    ion-button {
+      --padding-start: 0;
+      --padding-end: 0;
+      margin-right: 8px;
+    }
+
+    ion-icon {
+      font-size: 20px;
+    }
+  }
+
+  .post-stats {
+    padding: 0 12px 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .post-comments {
+    padding: 0 12px 8px;
+    line-height: 1.4;
+
+    .username {
+      font-weight: 700;
+      margin-right: 4px;
+    }
+
+    .hash-tag {
+      text-decoration: none;
+      color: var(--ion-color-primary);
+      margin-right: 4px;
+    }
+
+    .comment-item {
+      margin-bottom: 4px;
+
+      &.reply {
+        margin: 4px 0 4px 16px;
+        padding-left: 8px;
+        border-left: 3px solid var(--ion-color-light);
+      }
+    }
+
+    .comment-expander {
+      margin: 8px 0;
+      color: var(--ion-text-color-medium);
+      font-size: 12px;
+    }
+
+    ion-icon {
+      vertical-align: middle;
+    }
+  }
 }
