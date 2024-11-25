@@ -5,14 +5,11 @@ An Instagram clone built with Ionic and Angular, replicating the design and basi
 ## Table of Contents
 
 - [Features](#features)
-- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Running the App](#running-the-app)
 - [Built With](#built-with)
 - [Dependencies](#dependencies)
-- [Future Improvements](#future-improvements)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Features
 
@@ -21,11 +18,6 @@ An Instagram clone built with Ionic and Angular, replicating the design and basi
 - **Photo Capture**: Take photos and add them as posts or stories.
 - **Filters**: Menu to select filters for photos.
 - **User Profile**: User profile screen displaying information and statistics.
-
-## Project Structure
-
-- **src/app/pages**: Contains page components for different screens.
-- **assets/data**: Holds JSON files (`stories.json`, `posts.json`, `comments.json`, `profile.json`) used to simulate backend data.
 
 ### Example of Loading Data
 
