@@ -120,3 +120,24 @@
     }
   }
 }
+
+/* Asegura que el ion-toolbar use flexbox */
+ion-toolbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajusta la imagen para que encaje dentro del toolbar */
+.img-insta {
+  height: 24px;
+  /* Ajusta este valor según la altura deseada */
+  margin-left: 16px;
+  /* Espacio a la izquierda, ajusta según sea necesario */
+}
+
+/* Modo oscuro: invierte los colores de la imagen */
+@media (prefers-color-scheme: dark) {
+  .img-insta {
+    filter: invert(1);
+  }
+}

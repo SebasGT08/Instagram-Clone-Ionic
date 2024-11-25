@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'photo-preview',
     loadChildren: () => import('./photo-preview/photo-preview.module').then( m => m.PhotoPreviewPageModule)
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
   // {
   //   path: 'camera',
   //   loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)

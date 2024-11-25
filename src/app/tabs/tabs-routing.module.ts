@@ -29,10 +29,10 @@ const routes: Routes = [
       //   path: 'shop',
       //   loadChildren: () => import('../shop/shop.module').then(m => m.ShopPageModule),
       // },
-      // {
-      //   path: 'profile',
-      //   loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule),
-      // },
+      {
+        path: 'profile',
+        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule),
+      },
       {
         path: '',
         redirectTo: '/tabs/home',
