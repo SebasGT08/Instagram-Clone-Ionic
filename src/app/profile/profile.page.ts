@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -10,7 +11,10 @@ export class ProfilePage implements OnInit {
   profile: any = {}; // Información del perfil
   posts: any[] = []; // Publicaciones del perfil
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.loadProfile();
@@ -29,5 +33,12 @@ export class ProfilePage implements OnInit {
         image: post.image,
       }));
     });
+  }
+
+  logout() {
+    // Elimina el token de autenticación
+    localStorage.removeItem('authToken');
+    // Redirige al usuario a la página de inicio de sesión
+    this.router.navigate(['/login']);
   }
 }

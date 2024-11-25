@@ -18,17 +18,10 @@ const routes: Routes = [
     canActivate: [authGuard], // Protege todo el módulo de tabs con el guard
   },
   {
-    path: 'photo-preview',
-    loadChildren: () => import('./photo-preview/photo-preview.module').then( m => m.PhotoPreviewPageModule)
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
-  {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
-  },
-  // {
-  //   path: 'camera',
-  //   loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
-  // },
+  
 ];
 
 @NgModule({

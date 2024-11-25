@@ -34,10 +34,16 @@ const routes: Routes = [
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule),
       },
       {
+        path: 'photo-preview',
+        loadChildren: () => import('../photo-preview/photo-preview.module').then( m => m.PhotoPreviewPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full',
       },
+
+
     ],
 
   }

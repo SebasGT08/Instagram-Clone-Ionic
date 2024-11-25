@@ -86,7 +86,7 @@ export class CameraPage implements OnInit, OnDestroy {
       this.photo = canvas.toDataURL('image/png'); // Captura la imagen como base64
 
       // Navega a la página de previsualización
-      this.navCtrl.navigateForward('/photo-preview', {
+      this.navCtrl.navigateForward('tabs/photo-preview', {
         queryParams: { photo: this.photo },
       });
     }

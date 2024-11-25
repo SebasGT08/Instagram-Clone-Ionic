@@ -2,12 +2,14 @@
   <ion-toolbar>
     <ion-title>{{ profile.username }}</ion-title>
     <ion-buttons slot="end">
-      <ion-button color="dark">
-        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      <!-- Botón directo para cerrar sesión -->
+      <ion-button color="dark" (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content>
   <!-- Encabezado del perfil -->
