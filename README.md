@@ -61,7 +61,7 @@ export class HomePage implements OnInit {
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/instagram-clone.git
+   git clone https://github.com/SebasGT08/instagram_clone
    ```
 
 2. **Navigate to the project directory:**
